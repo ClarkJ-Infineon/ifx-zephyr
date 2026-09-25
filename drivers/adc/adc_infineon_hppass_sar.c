@@ -209,7 +209,7 @@ static int ifx_hppass_sar_configure_group(uint32_t channels, uint32_t group)
 	}
 
 	group_cfg.trig = CY_HPPASS_SAR_TRIG_0; /* TRIG_0 used for SW Trigger */
-	group_cfg.sampTime = CY_HPPASS_SAR_SAMP_TIME_DISABLED;
+	group_cfg.sampTime = CY_HPPASS_SAR_SAMP_TIME_0;
 
 	/* Enable directly sampled channels. */
 	group_cfg.dirSampMsk = channels & ADC_SAMPLER_DIRECT_MASK;
